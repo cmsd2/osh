@@ -1,0 +1,3 @@
+[submodule "basics/lpc810 blinky/LPC810_CodeBase"]
+	path = basics/lpc810 blinky/LPC810_CodeBase
+	url = https://github.com/microbuilder/LPC810_CodeBase.git
