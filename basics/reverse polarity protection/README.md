@@ -4,6 +4,9 @@ Reverse Polarity Protection using a p-channel MOSFET
 This demonstrates that using a carefully chosen p-channel mosfet,
 we can protect sensitive components from a flipped power connector.
 
+Explanation here:
+http://electronics.stackexchange.com/questions/104535/reverse-voltage-protection-with-a-p-channel-mosfet
+
 I chose the TSM2311 because it has:
 
  * very low drain-source resistance when working with TTL voltages
@@ -17,8 +20,8 @@ Included is a photo of the breadboard set up to test several surface mount SOT-2
 
 BOM
 ---
-1 x TSM2311
-2 x LED
-1 x 220 Ohm resistor
-1 x SparkFun SOT23 to DIP adapter https://www.sparkfun.com/products/717
+ * 1 x TSM2311
+ * 2 x LED
+ * 1 x 220 Ohm resistor
+ * 1 x SparkFun SOT23 to DIP adapter https://www.sparkfun.com/products/717
 
