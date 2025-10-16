@@ -23,3 +23,4 @@ production/
 
 # KiCad Lock files
 ~*.lck
+.DS_Store
