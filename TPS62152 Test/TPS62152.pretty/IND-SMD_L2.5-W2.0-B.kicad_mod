@@ -1,22 +1,119 @@
-(module easyeda2kicad:IND-SMD_L2.5-W2.0-B (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "IND-SMD_L2.5-W2.0-B"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "c1384220-54a2-4af6-aca5-6dbab475b7c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND-SMD_L2.5-W2.0-B"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "cfc04a93-3e11-4b94-a508-27770bc5cca7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0e33f61e-5faa-476e-8543-690dcae1515f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0e04dfc-308d-4a99-ae84-8211707c6856")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
 	(attr smd)
-	(fp_text reference REF** (at 0 -4.0) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.5 -1.3)
+		(end 1.5 -1.3)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "20447f31-3d12-4191-aeda-7efa0eba1aa2")
 	)
-	(fp_text value IND-SMD_L2.5-W2.0-B (at 0 4.0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.5 1.29)
+		(end 1.5 1.29)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "02d9b7c8-a373-4780-9323-d0246d1b6e70")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_circle
+		(center -1.25 1)
+		(end -1.22 1)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "190943be-2862-4e43-95e3-b905fbef9788")
 	)
-	(fp_line (start -1.50 1.29) (end 1.50 1.29) (layer F.SilkS) (width 0.25))
-	(fp_line (start -1.50 -1.30) (end 1.50 -1.30) (layer F.SilkS) (width 0.25))
-	(pad 2 smd rect (at 0.90 0.00 0.00) (size 1.10 2.20) (layers F.Cu F.Paste F.Mask))
-	(pad 1 smd rect (at -0.90 0.00 0.00) (size 1.10 2.20) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center -1.25 1.00) (end -1.22 1.00) (layer F.Fab) (width 0.06))
-	(model "TPS62152 Test/TPS62152.3dshapes/IND-SMD_L2.5-W2.0-B.wrl"
-		(offset (xyz 0.000 -0.000 -0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 0))
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "70e5ee03-35a5-4541-86f7-d429b96cc0ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.9 0)
+		(size 1.1 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "135b74dd-170b-439e-ba53-e3283e346b95")
+	)
+	(pad "2" smd rect
+		(at 0.9 0)
+		(size 1.1 2.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c7107ae4-c8fc-4845-b77c-7c81d2842046")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/TPS62152.3dshapes/IND-SMD_L2.5-W2.0-B.wrl"
+		(offset
+			(xyz 0 -0 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
